@@ -1,0 +1,20 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_flower_marloss",
+    "copy-from": "f_flower_marloss",
+    "name": "marloss flower",
+    "symbol": "f",
+    "color": "cyan",
+    "examine_action": "harvested_plant"
+  },
+  {
+    "type": "furniture",
+    "id": "f_flower_fungal",
+    "copy-from": "f_flower_fungal",
+    "name": "fungal flower",
+    "symbol": "f",
+    "color": "dark_gray",
+    "examine_action": "harvested_plant"
+  }
+]

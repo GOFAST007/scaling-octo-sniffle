@@ -1,0 +1,20 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_marloss",
+    "copy-from": "t_marloss",
+    "name": "marloss bush",
+    "symbol": "#",
+    "color": "pink",
+    "examine_action": "harvested_plant"
+  },
+  {
+    "type": "terrain",
+    "id": "t_marloss_tree",
+    "copy-from": "t_marloss_tree",
+    "name": "marloss tree",
+    "symbol": "7",
+    "color": "pink",
+    "examine_action": "harvested_plant"
+  }
+]

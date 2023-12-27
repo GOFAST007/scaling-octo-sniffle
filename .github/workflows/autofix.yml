@@ -1,0 +1,55 @@
+name: autofix.ci  # needed to securely identify the workflow
+
+on:
+  pull_request:
+    paths: ["**.json", "**.cpp", "**.hpp", "**.h", "**.c", "**.md", "**.ts"]
+
+permissions:
+  contents: read
+
+jobs:
+  autofix:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: sudo apt-get install astyle
+
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: format C++ files
+        run: make astyle
+
+      - name: format Markdown and TypeScript files
+        run: deno fmt
+
+      - name: format Lua files
+        run: deno task dprint fmt
+
+      - name: format JSON
+        run: make style-all-json-parallel RELEASE=1
+
+      - uses: autofix-ci/action@bee19d72e71787c12ca0f29de72f2833e437e4c9
+        if: ${{ always() }}
+        with:
+          commit-message: "style(autofix.ci): automated formatting"
+          comment: |
+            The Autofix app has automatically formatted this Pull Request.
+
+            If you edit your PR on web UI, you can ignore this message.
+            If you edit your PR locally, YOU MUST DO EITHER OF THE FOLLOWING:
+
+            - Run `git pull` to merge the automated commit into your local copy of the PR branch.
+            - [Format your code locally](https://docs.cataclysmbn.org/en/contribute/contributing/#code-style), and force push to your PR branch.
+
+            If you don't do this, your following work will be based on the old commit, and cause MERGE CONFLICT.
+
+      - name: lint and test typescript files
+        run: |
+          deno lint
+          deno test

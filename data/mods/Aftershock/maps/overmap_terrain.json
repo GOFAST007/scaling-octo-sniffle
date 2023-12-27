@@ -1,0 +1,109 @@
+[
+  {
+    "id": "prepnet_orchard",
+    "type": "overmap_terrain",
+    "copy-from": "generic_city_building",
+    "name": "PrepNet orchard",
+    "sym": "#",
+    "color": "i_green",
+    "flags": [ "SOURCE_FOOD" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sieged_fungal_tower",
+    "name": "fungal tower",
+    "sym": "T",
+    "color": "pink",
+    "see_cost": 3,
+    "extras": "marloss",
+    "flags": [ "NO_ROTATE", "RISK_HIGH" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "mortuary_2story",
+    "name": "county mortuary",
+    "sym": "M",
+    "color": "light_green",
+    "see_cost": 3,
+    "flags": [ "SIDEWALK" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "mortuary_basement",
+    "name": "county mortuary basement",
+    "sym": "M",
+    "color": "white",
+    "see_cost": 3
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "mortuary_2story_second",
+    "name": "county mortuary second floor",
+    "sym": "M",
+    "color": "light_green",
+    "see_cost": 3
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "mortuary_2story_roof",
+    "name": "county mortuary roof",
+    "sym": "M",
+    "color": "light_green",
+    "see_cost": 3
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "whately_lmoe",
+    "name": "LMOE shelter",
+    "sym": "+",
+    "color": "red",
+    "see_cost": 2,
+    "flags": [ "KNOWN_DOWN", "SOURCE_PEOPLE", "SOURCE_SAFETY", "SOURCE_GUN", "SOURCE_AMMO", "SOURCE_FOOD" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "whately_lmoe_roof",
+    "name": "LMOE shelter",
+    "sym": ".",
+    "color": "brown",
+    "see_cost": 2,
+    "flags": [ "KNOWN_DOWN" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "whately_lmoe_under_first_floor",
+    "name": "LMOE shelter",
+    "sym": "+",
+    "color": "red",
+    "see_cost": 2,
+    "flags": [ "KNOWN_UP", "SOURCE_PEOPLE", "SOURCE_SAFETY", "SOURCE_GUN", "SOURCE_AMMO", "SOURCE_FOOD" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "whately_lmoe_under_second_floor",
+    "name": "LMOE shelter",
+    "sym": "+",
+    "color": "red",
+    "see_cost": 2,
+    "flags": [ "KNOWN_UP", "SOURCE_PEOPLE", "SOURCE_SAFETY", "SOURCE_GUN", "SOURCE_AMMO", "SOURCE_FOOD" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "robot_dispatch_first",
+    "name": "robot dispatch center",
+    "sym": "R",
+    "color": "i_pink",
+    "see_cost": 2,
+    "mondensity": 2,
+    "flags": [ "SIDEWALK" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "robot_dispatch_second",
+    "name": "robot dispatch center",
+    "sym": "R",
+    "color": "i_pink",
+    "see_cost": 2,
+    "mondensity": 2
+  }
+]

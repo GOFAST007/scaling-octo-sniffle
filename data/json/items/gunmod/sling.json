@@ -1,0 +1,29 @@
+[
+  {
+    "id": "shoulder_strap",
+    "type": "GUNMOD",
+    "name": { "str": "shoulder strap" },
+    "description": "A shoulder strap allows the rifle to be worn over your shoulders like a piece of clothing.  However, it offers no protection.",
+    "weight": "100 g",
+    "volume": "250 ml",
+    "integral_volume": "100 ml",
+    "price": "480 cent",
+    "price_postapoc": "10 cent",
+    "material": "cotton",
+    "symbol": ":",
+    "color": "green",
+    "location": "sling",
+    "mod_target_category": [
+      [ "SUBMACHINE_GUNS" ],
+      [ "RIFLES" ],
+      [ "MACHINE_GUNS" ],
+      [ "GATLING_GUNS" ],
+      [ "SHOTGUNS" ],
+      [ "M_XBOWS" ],
+      [ "GRENADE_LAUNCHERS" ],
+      [ "ROCKET_LAUNCHERS" ],
+      [ "FLAMETHROWERS" ]
+    ],
+    "flags": [ "IS_ARMOR", "BELTED", "COMPACT", "OVERSIZE", "WATER_FRIENDLY" ]
+  }
+]
