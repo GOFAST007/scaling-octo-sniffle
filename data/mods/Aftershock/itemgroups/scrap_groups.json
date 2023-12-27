@@ -1,0 +1,7 @@
+[
+  {
+    "id": "surgery",
+    "type": "item_group",
+    "items": [ [ "bionic_maintenance_toolkit", 20 ], [ "afs_biomaterial_4", 10 ], [ "afs_neural_io_3", 5 ] ]
+  }
+]

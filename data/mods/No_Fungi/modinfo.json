@@ -1,0 +1,42 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "No_Fungi",
+    "name": "No Fungal Monsters",
+    "authors": [ "Chaosvolt" ],
+    "description": "Removes fungal monsters and regions from the game.",
+    "category": "monster_exclude",
+    "dependencies": [ "bn" ]
+  },
+  {
+    "type": "MONSTER_BLACKLIST",
+    "categories": [ "GROUP_FUNGI", "GROUP_FUNGI_FUNGALOID", "GROUP_FUNGI_TOWER", "GROUP_FUNGI_FLOWERS" ]
+  },
+  {
+    "type": "MONSTER_BLACKLIST",
+    "monsters": [
+      "mon_spore",
+      "mon_fungaloid",
+      "mon_fungaloid_young",
+      "mon_zombie_fungus",
+      "mon_boomer_fungus",
+      "mon_zombie_child_fungus",
+      "mon_fungal_wall",
+      "mon_fungaloid_queen",
+      "mon_fungal_tendril",
+      "mon_fungal_hedgerow",
+      "mon_fungaloid_tower",
+      "mon_fungal_blossom",
+      "mon_fungaloid_seeder",
+      "mon_zombie_gasbag_fungus",
+      "mon_zombie_smoker_fungus",
+      "mon_skeleton_hulk_fungus",
+      "mon_spider_fungus"
+    ]
+  },
+  {
+    "type": "region_overlay",
+    "regions": [ "all" ],
+    "overmap_feature_flag_settings": { "blacklist": [ "FUNGAL" ] }
+  }
+]

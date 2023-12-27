@@ -1,0 +1,15 @@
+[
+  {
+    "id": "clothes_hanger",
+    "type": "TOOL",
+    "name": { "str": "clothes hanger" },
+    "description": "A plastic clothes hanger with a metal hook to hang something on a rail.",
+    "weight": "100 g",
+    "volume": "150 ml",
+    "price": "1 USD",
+    "price_postapoc": "0 cent",
+    "material": [ "plastic", "steel" ],
+    "symbol": ";",
+    "color": "brown"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "type": "effect_type",
+    "id": "test_drunk",
+    "morale": "morale_test",
+    "base_mods": { "morale": [ 5 ] },
+    "scaling_mods": { "morale": [ 10 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "test_hangover",
+    "morale": "morale_test",
+    "base_mods": { "morale": [ -10 ] },
+    "scaling_mods": { "morale": [ -20 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "test_high",
+    "morale": "morale_test",
+    "base_mods": { "morale": [ 25 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "test_juggling_l1",
+    "effects_on_remove": [ { "effect_type": "test_juggling_r1", "duration": "0 s", "body_part": "hand_r" } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "test_juggling_r1",
+    "effects_on_remove": [ { "effect_type": "test_juggling_r2", "duration": "0 s", "body_part": "hand_r" } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "test_juggling_r2",
+    "effects_on_remove": [ { "effect_type": "test_juggling_l2", "duration": "0 s", "body_part": "hand_l" } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "test_juggling_l2",
+    "effects_on_remove": [ { "effect_type": "test_juggling_l1", "duration": "0 s" } ]
+  }
+]

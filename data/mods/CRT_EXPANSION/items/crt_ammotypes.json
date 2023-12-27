@@ -1,0 +1,14 @@
+[
+  {
+    "type": "ammunition_type",
+    "id": "pellets",
+    "name": ".117 pellets",
+    "default": "pellet"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "pulsesb",
+    "name": "pulse ammo",
+    "default": "pulsesb"
+  }
+]

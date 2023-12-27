@@ -1,0 +1,20 @@
+src:
+  - src/**/*
+
+tests:
+  - tests/**/*
+
+data:
+  - data/**/*
+
+mods:
+  - data/mods/**/*
+
+translation:
+  - lang/**/*
+
+docs:
+  - doc/**/*
+
+scripts:
+  - scripts/**/*

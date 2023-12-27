@@ -1,0 +1,164 @@
+[
+  {
+    "type": "overmap_terrain",
+    "abstract": "generic_evac_center",
+    "name": "refugee center",
+    "see_cost": 5,
+    "flags": [ "SOURCE_PEOPLE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "abstract": "generic_fence",
+    "name": "fence",
+    "color": "light_gray"
+  },
+  {
+    "type": "overmap_terrain",
+    "abstract": "generic_evac_road",
+    "name": "road",
+    "looks_like": "road",
+    "color": "dark_gray",
+    "see_cost": 1
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "evac_center_7",
+      "evac_center_8",
+      "evac_center_9",
+      "evac_center_12",
+      "evac_center_13",
+      "evac_center_14",
+      "evac_center_17",
+      "evac_center_18",
+      "evac_center_19"
+    ],
+    "copy-from": "generic_evac_center",
+    "sym": "┼",
+    "color": "white"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "evac_center_7_z1",
+      "evac_center_8_z1",
+      "evac_center_9_z1",
+      "evac_center_12_z1",
+      "evac_center_13_z1",
+      "evac_center_14_z1",
+      "evac_center_17_z1",
+      "evac_center_18_z1",
+      "evac_center_19_z1"
+    ],
+    "name": "refugee center roof",
+    "sym": "┼",
+    "color": "white",
+    "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "evac_center_13_z2",
+    "name": "open air",
+    "looks_like": "open_air",
+    "sym": ".",
+    "color": "blue",
+    "see_cost": 1
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "refctr_field",
+    "see_cost": 2,
+    "name": "field",
+    "looks_like": "field",
+    "sym": ",",
+    "color": "brown",
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "refctr_fence_NW",
+    "copy-from": "generic_fence",
+    "sym": "┌"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "refctr_fence_N", "refctr_fence_S", "refctr_fence_entrance_L", "refctr_fence_entrance_R" ],
+    "copy-from": "generic_fence",
+    "sym": "─"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "refctr_fence_NE",
+    "copy-from": "generic_fence",
+    "sym": "┐"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "refctr_fence_W", "refctr_fence_E" ],
+    "copy-from": "generic_fence",
+    "sym": "│"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "refctr_fence_SE",
+    "copy-from": "generic_fence",
+    "sym": "┘"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "refctr_fence_SW",
+    "copy-from": "generic_fence",
+    "sym": "└"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "evac_center_1",
+    "copy-from": "generic_evac_road",
+    "sym": "┌"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "evac_center_2", "evac_center_3", "evac_center_4", "evac_center_22", "evac_center_24" ],
+    "copy-from": "generic_evac_road",
+    "sym": "─"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "evac_center_5",
+    "copy-from": "generic_evac_road",
+    "sym": "┐"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "evac_center_6",
+      "evac_center_10",
+      "evac_center_11",
+      "evac_center_15",
+      "evac_center_16",
+      "evac_center_20",
+      "refctr_S3e",
+      "refctr_road"
+    ],
+    "copy-from": "generic_evac_road",
+    "sym": "│"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "evac_center_21",
+    "copy-from": "generic_evac_road",
+    "sym": "└"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "evac_center_23",
+    "copy-from": "generic_evac_road",
+    "sym": "┬"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "evac_center_25",
+    "copy-from": "generic_evac_road",
+    "sym": "┘"
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "hk_g80",
+    "copy-from": "rifle_magnetic",
+    "type": "GUN",
+    "name": { "str": "H&K G80 railgun" },
+    "description": "Developed by Heckler & Koch, this railgun magnetically propels a ferromagnetic projectile using an alternating current.  Powered by UPS.",
+    "weight": "3914 g",
+    "volume": "2750 ml",
+    "price": "19200 USD",
+    "price_postapoc": "120 USD",
+    "material": "steel",
+    "ammo": "12mm",
+    "range": 60,
+    "dispersion": 45,
+    "ups_charges": 5,
+    "magazines": [ [ "12mm", [ "hk_g80mag" ] ] ]
+  }
+]
